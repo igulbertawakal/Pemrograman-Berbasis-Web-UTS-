@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f0f1a;
+    color: #ffffff;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(30, 90, 255, 0.2), rgba(30, 90, 255, 0.1));
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(15, 15, 26, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a4eff;
+}
+
+#beranda {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    gap: 50px;
+}
+
+.beranda-content {
+    flex: 1;
+}
+
+.beranda-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #4a4eff;
+}
+
+.beranda-content p {
+    color: #a0a0a0;
+    margin-bottom: 30px;
+}
+
+.beranda-image {
+    flex: 1;
+    text-align :right;
+}
+
+.beranda-image img {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(30, 90, 255, 0.2);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.prestasi-list, .contact-form, .contact-info {
+    background-color: rgba(26, 26, 46, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.prestasi-list div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(15, 15, 26, 0.5);
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(15, 15, 26, 0.7);
+    border: 1px solid #333;
+    color: white;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    background-color: rgba(15, 15, 26, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4a4eff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a3acf;
+}
+
+.back-to-top {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #beranda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beranda-image img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}

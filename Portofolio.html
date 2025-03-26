@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portofolio.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Igoel.</div>
+        <div class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#prestasi">Prestasi</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="beranda" class="container">
+        <div class="beranda-content">
+            <h1>Muhammad Irfan Hasani Al-Ghifari</h1>
+            <p>Saya Muhammad Irfan Hasani Al-Ghifari, mahasiswa Program Studi Sistem Informasi, Fakultas Ilmu Komputer di Universitas Singaperbangsa. Saya memiliki minat dalam teknologi, khususnya dalam pengembangan front-end. Saya menguasai HTML, CSS, dan JavaScript serta berfokus pada pembuatan antarmuka yang responsif dan user-friendly. Dengan semangat belajar yang tinggi, saya terus mengembangkan keterampilan dalam membangun tampilan website yang menarik dan fungsional.</p>
+        </div>
+        <div class="beranda-image">
+            <img src="Saya.jpg" alt="Muhammad Irfan Hasani">
+        </div>
+    </section>
+
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="portfolio.png" alt="Proyek 1">
+                <div class="content" style="padding: 15px; text-align: center;">Website E-commerce</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prestasi" class="container">
+        <h2>Prestasi</h2>
+        <div class="prestasi-list">
+            <div>Mengikuti Lomba Matematika Antar SMP (2018)</div>
+            <div>Mengikuti Lomba Basket Antar Sekolah SMA (2021)</div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Nama" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Pesan" rows="5" required></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">Kirim Pesan</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>📧 Email: 2310631250069@student.unsika.ac.id</p>
+            <p>📱 Telepon: 08987202796</p>
+            <p>📍 Alamat: Karawang, Jawa Barat</p>
+        </div>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#beranda">
+            <button>Kembali ke Beranda</button>
+        </a>
+    </div>
+
+    <script src="Portofolio.js"></script>
+</body>
+</html>
